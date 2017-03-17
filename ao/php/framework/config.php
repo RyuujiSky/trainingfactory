@@ -21,7 +21,7 @@ const IMAGE_FAILURE_SAVE_FAILED = 23;
 
 const DB_NOT_ACCEPTABLE_DATA = 29;
 
-const DEBUG = false;
+const DEBUG = true;
 
 if( DEBUG ) {
     error_reporting(-1);
