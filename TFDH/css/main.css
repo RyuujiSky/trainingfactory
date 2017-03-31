@@ -1,0 +1,112 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #e7e9ec; }
+
+.clear {
+  clear: both; }
+
+#body-wrapper {
+  display: block;
+  width: 1020px;
+  height: auto;
+  margin: auto;
+  background-color: #fff;
+  padding: 15px 20px; }
+
+#content-wrapper {
+  padding: 10px;
+  border: solid 1px #ccc; }
+
+.active {
+  font-weight: bold; }
+
+/* Header */
+header {
+  width: 100%;
+  height: auto;
+  border-bottom: solid 2px #990000;
+  padding-bottom: 10px; }
+  header #title {
+    float: left;
+    width: 500px; }
+    header #title img {
+      float: left;
+      width: 120px;
+      margin-right: 50px; }
+    header #title h1 {
+      font-size: 35px;
+      margin-top: 0px;
+      color: #990000; }
+
+#login-wrapper {
+  width: 200px;
+  float: right; }
+  #login-wrapper input {
+    float: right; }
+  #login-wrapper input[type="text"],
+  #login-wrapper input[type="password"] {
+    height: 25px;
+    padding: 0px 5px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 5px; }
+  #login-wrapper input[type="submit"] {
+    margin-right: 5px; }
+  #login-wrapper button,
+  #login-wrapper input[type="submit"] {
+    float: right;
+    padding: 2px 6px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #990000; }
+
+/* nav */
+nav {
+  width: 100%;
+  color: #990000; }
+  nav ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 5px 0px; }
+    nav ul li {
+      display: inline-block;
+      margin-right: 25px; }
+      nav ul li a {
+        text-decoration: underline;
+        cursor: pointer; }
+
+/* photo collage */
+#photo-col figure {
+  width: 32.6%;
+  max-width: 33.3%;
+  height: 220px;
+  float: left;
+  margin: 0px;
+  overflow: hidden; }
+  #photo-col figure img {
+    width: 100%;
+    max-width: 100%; }
+#photo-col figure:nth-child(1) {
+  margin-right: 5px; }
+#photo-col figure:nth-child(2) {
+  margin: 0px 5px; }
+#photo-col figure:nth-child(3) {
+  margin-left: 5px; }
+
+/* main-content */
+#main-content {
+  border: solid 1px #ccc;
+  margin-top: 10px;
+  padding: 15px 35px; }
+  #main-content h1 {
+    margin: 0px;
+    color: #990000; }
