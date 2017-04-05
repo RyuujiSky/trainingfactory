@@ -18,7 +18,7 @@
                     <h1>Training centrum Den Haag</h1>
                 </div>
                 <div id="login-wrapper">
-                    <form>
+                    <form method="post" action="?control=bezoeker&action=login">
                         <input type="text" name="username" placeholder="username">
                         <input type="password" name="password" placeholder="wachtwoord">
                         <button>reset ww</button>
