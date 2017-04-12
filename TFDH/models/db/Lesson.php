@@ -11,7 +11,6 @@ class Lesson EXTENDS Entiteit
     protected $location;
     protected $max_persons;
     
-
     public function __construct()
     {
         $this->id = filter_var($this->id,FILTER_VALIDATE_INT);

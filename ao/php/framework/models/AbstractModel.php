@@ -6,8 +6,7 @@ abstract class AbstractModel
     protected $control;
     protected $action;
     protected $dbh;
-    
-    
+       
     public function __construct($control,$action)
     {
         $this->control = $control;
@@ -41,7 +40,6 @@ abstract class AbstractModel
         return empty($_POST);
     }
     /**
-     * 
      * @return Persoon in casu de gebruiker van de applicatie die ook in de sessie staat of null als er geen sessie of een lege sessie is
      */
     public function getGebruiker()
@@ -59,7 +57,7 @@ abstract class AbstractModel
     public function getGebruikerRecht()
     {
         $gebruiker = $this->getGebruiker();
-        $recht = ($gebruiker === null) ? DEFAULT_ROLE : $gebruiker->getRecht();
+        $recht = ($gebruiker === null) ? DEFAULT_ROLE : $gebruiker->getRole();
         return $recht;
     }
     
@@ -79,8 +77,7 @@ abstract class AbstractModel
             \session_destroy();
         }  
     }
-    
-    
+     
     public function setAction($action)
     {
         $this->action=$action;

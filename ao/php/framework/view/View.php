@@ -5,8 +5,7 @@ class View {
     private $control;
     private $action;
     private static $data = array();//een associatief te vullen array
-    
-     
+        
     public function setControl($control)
     {
         $this->control = $control;
@@ -37,7 +36,6 @@ class View {
         
         return str_replace('\\',DIRECTORY_SEPARATOR, BASE_NAMESPACE."view\\tpls\\$this->control\\$this->action.php");
     }
-    
     
     public function toon()
     {

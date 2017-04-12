@@ -21,22 +21,25 @@ abstract class AbstractController implements IController
         if(!is_subclass_of($modelClassName,'\\ao\php\\framework\\models\\AbstractModel'))
         {
             throw new ERROR\FrameworkException
-                        ("klasse $modelClassName erft niet van framework AbstractModel");
+            ("klasse $modelClassName erft niet van framework AbstractModel");
         }
         $this->model = new $modelClassName($control, $action);
         $gebruikersRecht = $this->model->getGebruikerRecht();
-        if( $gebruikersRecht!==$this->control ) {
+        if( $gebruikersRecht!==$this->control ) 
+        {
+            var_dump($this->model->getGebruikerRecht());
+            var_dump($this->control);
             $this->model->stopSession();
             $this->view->set('boodschap','je doet rare dingen met deze applicatie. Gebruik de gewone formulieren');
             $this->forward('default', DEFAULT_ROLE);
         }
     }
-   
-    
+       
     public function execute()
     {
         $opdracht = $this->action."Action";
-        if(method_exists($this, $opdracht)) {
+        if(method_exists($this, $opdracht)) 
+        {
             $this->$opdracht();
             $this->view->setAction($this->action);
             $this->view->setControl($this->control);
@@ -46,7 +49,8 @@ abstract class AbstractController implements IController
         }
     }
     
-    protected function forward($action, $control=null){
+    protected function forward($action, $control=null)
+    {
         $action = strtolower(trim($action));
         if(isset($control)){
             
@@ -58,7 +62,7 @@ abstract class AbstractController implements IController
             if(!is_subclass_of($klasseNaam,'\\ao\php\\framework\\controls\\AbstractController'))
             {
                 throw new ERROR\FrameworkException
-                            ("klas $klasseNaam erft niet van framework AbstractController");
+                ("klas $klasseNaam erft niet van framework AbstractController");
             }
             $controller = new $klasseNaam($control,$action);
         }
@@ -71,8 +75,7 @@ abstract class AbstractController implements IController
         exit();
     }
     protected abstract function defaultAction();
-    
-    
+       
 }
 
 

@@ -97,5 +97,4 @@ class BezoekerModel extends AbstractModel {
         }
         return REQUEST_FAILURE_DATA_INVALID; 
     }
-    
 }

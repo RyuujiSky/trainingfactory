@@ -4,8 +4,7 @@ use ao\php\framework\models\db\Entiteit;
 
 class Person EXTENDS Entiteit
 {
-    private $id;
-
+    protected $id;
     protected $loginname;
     protected $password;
     protected $preprovision;
