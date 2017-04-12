@@ -5,7 +5,6 @@ use ao\php\framework\models\db\Entiteit;
 class Training EXTENDS Entiteit
 {
     protected $id;
-
     protected $description;
     protected $duration;
     protected $extra_costs;
