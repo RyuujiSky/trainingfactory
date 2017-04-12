@@ -30,11 +30,11 @@
 
             <nav>
                 <ul>
-                    <li class="active"><a>Home</a></li>
+                    <li><a href="?control=bezoeker&action=default">Home</a></li>
                     <li><a href="?control=bezoeker&action=training">Trainings Aanbod</a></li>
                     <li><a href="?control=bezoeker&action=register">Lid worden</a></li>
                     <li><a href="?control=bezoeker&action=rule">Gedragsregels</a></li>
-                    <li><a href="?control=bezoeker&action=location">Lokatie & contact</a></li>
+                    <li><a class="active" href="?control=bezoeker&action=location">Lokatie & contact</a></li>
                 </ul>
             </nav>
 
@@ -53,7 +53,16 @@
                 </section>
 
                 <section id="main-content">
-                    <h1>Home</h1>
+                    <h1>Lokatie & contact</h1>
+                    
+                    <div>
+                        <p>
+                        Anna van Buerenplein 23, 2595 DA Den Haag
+                        </p>
+                        <p>
+                        Telefoon: 06 7777777
+                        </p>
+                    </div>
                 </section>
             </div>
         </div>
