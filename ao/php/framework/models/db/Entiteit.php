@@ -4,7 +4,6 @@ namespace ao\php\framework\models\db;
 use ao\php\framework\error as ERROR;
 abstract class Entiteit
 {
-    
     /**
     * @param <string> $methodeNaam
     * deze variabele bevat als string de naam van een methode die niet bestaat in de klassedefinitie

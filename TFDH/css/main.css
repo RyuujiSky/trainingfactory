@@ -110,3 +110,6 @@ nav {
   #main-content h1 {
     margin: 0px;
     color: #990000; }
+  #main-content img {
+      max-width: 25px;
+  }
