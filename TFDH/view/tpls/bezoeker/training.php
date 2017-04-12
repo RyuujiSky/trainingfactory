@@ -30,8 +30,8 @@
 
             <nav>
                 <ul>
-                    <li class="active"><a>Home</a></li>
-                    <li><a href="?control=bezoeker&action=training">Trainings Aanbod</a></li>
+                    <li><a href="?control=bezoeker&action=default">Home</a></li>
+                    <li><a class="active" href="?control=bezoeker&action=training">Trainings Aanbod</a></li>
                     <li><a href="?control=bezoeker&action=register">Lid worden</a></li>
                     <li><a href="?control=bezoeker&action=rule">Gedragsregels</a></li>
                     <li><a href="?control=bezoeker&action=location">Lokatie & contact</a></li>
@@ -53,7 +53,27 @@
                 </section>
 
                 <section id="main-content">
-                    <h1>Home</h1>
+                    <h1>Trainings aanbod</h1>
+                    <table class="lesaanbod">
+                        <b>Er zijn <?= count($training);?> soorten trainingen.</b><br/><br/>
+                        <tr>
+                        <td class="lesaanbod"><b>Omschrijving</b></td><td class="lesaanbod"><b>Tijdsduur</b></td><td class="lesaanbod"><b>Extra Kosten</b></td>
+                        </tr>
+                         <?php foreach($training as $t):?>
+                            <tr>
+                                <td class="lesaanbod">
+                                    <?= $t->getDescription();?>
+                                </td>
+                                <td class="lesaanbod">
+                                    <?= $t->getDuration();?>
+                                </td>
+                                <td class="lesaanbod">
+                                    <?= $t->getExtraCosts();?>
+                                </td>
+                             </tr>
+                            <?php  endforeach;?>
+                    </table>
+                    <p>Let op, voor het sporten zijn dichte schoenen verplicht.  </p>
                 </section>
             </div>
         </div>
