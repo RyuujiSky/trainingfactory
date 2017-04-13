@@ -58,23 +58,98 @@
                         Vul hieronder alle gegevens in en registreer jezelf.
                     </p>
                     <form method="post" action="?control=bezoeker&action=register">
-                        Voornaam* <input required type="text" placeholder="Voornaam invullen" name="fn"></br>
-                        Tussenvoegsel <input type="text" placeholder="Tussenvoegsel invullen" name="pp"></br>
-                        Achternaam* <input required type="text" placeholder="Achternaam invullen" name="ln"></br>
-                        Geboortedatum* <input required type="date"  name="dob"></br>
-                        Gebruikersnaam* <input required type="text" placeholder="Gebruikersnaam invullen" name="un"> (te gebruiken om in te loggen)</br>
-                        Wachtwoord* <input requiredt type="password" placeholder="Wachtwoord invullen" name="pw"></br>
-                        Herhaling Wachtwoord* <input required type="password" placeholder="Wachtwoord herhalen" name="pw2"></br>
-                        Het wachtwoord is nodig om in te loggen. moetminstens 6 tekens bevatten.</br>
-                        </br>
-                        Geslacht Man<input type="radio" name="gender" value="male"> Vrouw<input type="radio" name="gender" value="Female"></br>
-                        
-                        Straat* <input type="text" placeholder="straat invullen" name="st"></br>
-                        Postcode* <input type="text" placeholder="postcode invullen" name="pc"></br>
-                        Stad <input type="text" placeholder="Stad invullen" name="ct"></br>
-                        Email <input type="email" placeholder="Email invullen" name="em"></br>
-                        
-                        <input type="submit" value="Register">
+                        <table>
+                            <tr>
+                                <td>Voornaam*</td>
+                                <td>
+                                    <input required type="text" placeholder="Voornaam invullen" name="fn">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Tussenvoegsel</td>
+                                <td>
+                                    <input type="text" placeholder="Tussenvoegsel invullen" name="pp">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Achternaam*</td>
+                                <td>
+                                    <input required type="text" placeholder="Achternaam invullen" name="ln">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Geboortedatum*</td>
+                                <td>
+                                    <input required type="date"  name="dob">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Gebruikersnaam*</td>
+                                <td>
+                                    <input required type="text" placeholder="Gebruikersnaam invullen" name="un">
+                                    (te gebruiken om in te loggen)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Wachtwoord*</td>
+                                <td>
+                                    <input requiredt type="password" placeholder="Wachtwoord invullen" name="pw">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Herhaling Wachtwoord*</td>
+                                <td>
+                                    <input required type="password" placeholder="Wachtwoord herhalen" name="pw2">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Het wachtwoord is nodig om in te loggen en moet minstens 6 tekens bevatten.</td>
+                            </tr>
+                            <tr>
+                                <td></br></td>
+                            </tr>
+                            <tr>
+                                <td>Geslacht</td>
+                                 <td>
+                                     Man<input type="radio" name="gender" value="male"> 
+                                     Vrouw<input type="radio" name="gender" value="Female">
+                                 </td>
+                            </tr>
+                            <tr>
+                                <td></br></td>
+                            </tr>
+                            <tr>
+                                <td>Straat*</td>
+                                <td>
+                                    <input type="text" placeholder="straat invullen" name="st">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Postcode*</td>
+                                <td>
+                                    <input type="text" placeholder="postcode invullen" name="pc">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Stad</td>
+                                <td>
+                                    <input type="text" placeholder="Stad invullen" name="ct">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Email</td>
+                                <td>
+                                    <input type="email" placeholder="Email invullen" name="em">
+                                </td>
+                            </tr>  
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <input type="submit" value="Register">
+                                </td>
+                            </tr>
+                        </table>
                     </form>
                 </section>
             </div>

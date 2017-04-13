@@ -54,6 +54,9 @@
 
                 <section id="main-content">
                     <h1>Home</h1>
+                    <p>
+                        Welkom bij Training centrum Den Haag
+                    </p>
                 </section>
             </div>
         </div>

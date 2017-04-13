@@ -70,7 +70,8 @@ class BezoekerController extends AbstractController {
     }
     
     public function trainingAction(){
-        
+        $trainingen = $this->model->getTrainingen();
+        $this->view->set('trainingen',$trainingen);
     }
     
     public function ruleAction(){

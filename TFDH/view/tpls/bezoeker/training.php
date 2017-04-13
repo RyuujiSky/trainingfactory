@@ -55,11 +55,13 @@
                 <section id="main-content">
                     <h1>Trainings aanbod</h1>
                     <table class="lesaanbod">
-                        <b>Er zijn <?= count($training);?> soorten trainingen.</b><br/><br/>
+                        <b>Er zijn <?= count($trainingen);?> soorten trainingen.</b><br/><br/>
                         <tr>
-                        <td class="lesaanbod"><b>Omschrijving</b></td><td class="lesaanbod"><b>Tijdsduur</b></td><td class="lesaanbod"><b>Extra Kosten</b></td>
+                        <td class="lesaanbod"><b>Omschrijving</b></td>
+                        <td class="lesaanbod"><b>Tijdsduur</b></td>
+                        <td class="lesaanbod"><b>Kosten</b></td>
                         </tr>
-                         <?php foreach($training as $t):?>
+                         <?php foreach($trainingen as $t):?>
                             <tr>
                                 <td class="lesaanbod">
                                     <?= $t->getDescription();?>
@@ -68,7 +70,7 @@
                                     <?= $t->getDuration();?>
                                 </td>
                                 <td class="lesaanbod">
-                                    <?= $t->getExtraCosts();?>
+                                    <?= $t->getExtra_costs();?>
                                 </td>
                              </tr>
                             <?php  endforeach;?>

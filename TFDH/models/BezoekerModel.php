@@ -97,4 +97,13 @@ class BezoekerModel extends AbstractModel {
         }
         return REQUEST_FAILURE_DATA_INVALID; 
     }
+    
+    public function getTrainingen()
+    {
+       $sql = 'SELECT * FROM `training` ';
+       $stmnt = $this->dbh->prepare($sql);
+       $stmnt->execute();
+       $trainingen = $stmnt->fetchAll(\PDO::FETCH_CLASS,__NAMESPACE__.'\db\Training');    
+       return $trainingen;
+    }
 }
